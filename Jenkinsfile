@@ -10,7 +10,7 @@ pipeline {
         stage ('Deploy'){
             steps{
                 sh 'ls'
-                sh 'systemctl start node-app.service'
+                sh 'npm run build'
             }
         }
     }
