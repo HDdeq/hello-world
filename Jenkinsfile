@@ -9,6 +9,7 @@ pipeline {
                 git pull https://github.com/HDdeq/hello-world.git
                 ls
                 npm run build
+                pwd
                 '''
             }
         }
