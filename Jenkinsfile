@@ -9,8 +9,10 @@ pipeline {
         }
         stage ('Deploy'){
             steps{
-                sh 'ls'
-                sh 'npm run build'
+                sh '''
+                ls
+                pwd
+                '''
             }
         }
     }
