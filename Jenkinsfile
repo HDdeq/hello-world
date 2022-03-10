@@ -14,7 +14,9 @@ pipeline {
         stage ('Deploy'){
             steps{
                 sh '''
+                systemctl daemon-reload
                 systemctl start node-app.service
+                systemctl enable node-app.service
                 '''
             }
         }
