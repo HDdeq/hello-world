@@ -15,6 +15,7 @@ pipeline {
             steps{
                 sh '''
                 ls
+                pwd
                 npm start
                 '''
             }
